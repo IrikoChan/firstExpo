@@ -37,6 +37,7 @@ export default function App(): JSX.Element {
         <StatusBar style="auto" />
         <LocalizationProvider>
           <AuthProvider>
+            
             <Navigation />
           </AuthProvider>
         </LocalizationProvider>

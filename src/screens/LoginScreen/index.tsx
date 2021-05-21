@@ -37,26 +37,26 @@ const LoginScreen = (): JSX.Element => {
   return (
     <Container>
       <Content>
-        <Text>{t('screens.LoginScreen.title')}</Text>
-        <Form schema={schema} defaultValues={defaultValues}>
-          <Input
-            testID="login.input.email"
-            name="email"
-            placeholder={t('screens.LoginScreen.form.email')}
-            keyboardType="email-address"
-          />
-          <Input
-            testID="login.input.password"
-            name="password"
-            placeholder={t('screens.LoginScreen.form.password')}
-            secureTextEntry
-          />
-          <SubmitButton
-            testID="loginButton"
-            title={t('screens.LoginScreen.button')}
-            onSubmit={onSubmit}
-          />
-        </Form>
+          <Text>{t('screens.LoginScreen.title')}</Text>
+          <Form schema={schema} defaultValues={defaultValues}>
+            <Input
+              testID="login.input.email"
+              name="email"
+              placeholder={t('screens.LoginScreen.form.email')}
+              keyboardType="email-address"
+            />
+            <Input
+              testID="login.input.password"
+              name="password"
+              placeholder={t('screens.LoginScreen.form.password')}
+              secureTextEntry
+            />
+            <SubmitButton
+              testID="loginButton"
+              title={t('screens.LoginScreen.button')}
+              onSubmit={onSubmit}
+            />
+          </Form>
       </Content>
     </Container>
   )

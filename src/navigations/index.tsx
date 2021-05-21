@@ -2,8 +2,8 @@ import 'react-native-gesture-handler'
 import * as React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { useAuth } from 'contexts/AuthContext'
-import AuthStack from './AuthStack'
-import AppStack from './AppStack'
+import AuthDrawer from './AuthDrawer'
+import AppDrawer from './AppDrawer'
 
 const Navigation = (): JSX.Element => {
   const {
@@ -12,7 +12,7 @@ const Navigation = (): JSX.Element => {
   const isAuth = !!userToken
   return (
     <NavigationContainer>
-      {isAuth ? <AppStack /> : <AuthStack />}
+      {isAuth ? <AppDrawer /> : <AuthDrawer />}
     </NavigationContainer>
   )
 }

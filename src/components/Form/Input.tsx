@@ -37,7 +37,7 @@ const TextInput = styled.TextInput<InputProps>`
     return `
       border: 1px solid ${theme.color.primary};
       border-radius: 10px;
-      margin-top: 10px;
+      margin-top: 5px;
       padding: 10px;
      `
   }}
